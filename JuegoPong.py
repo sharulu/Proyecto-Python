@@ -295,12 +295,12 @@ def Inicio_Juego():
         Para la parte vertical a la barra se le sumo 30 pixeles ya que, fue lo
         suficiente que se necesito para la bola rebotara.'''
         # Borde Barra Derecha
-        if ((Bola.xcor() > 260 and Bola.xcor() < 270)
+        if ((Bola.xcor() > 270 and Bola.xcor() < 280)
             and (Bola.ycor() < Barra_Derecha.ycor() + 30
             and Bola.ycor() > Barra_Derecha.ycor()-30)):
             Bola.dx *= -1
         # Borde Barra Izquierda
-        if ((Bola.xcor() < -260 and Bola.xcor() > -270)
+        if ((Bola.xcor() < -270 and Bola.xcor() > -280)
             and (Bola.ycor() > Barra_Izquierda.ycor()-30
             and Bola.ycor() < Barra_Izquierda.ycor()+30)):
             Bola.dx *= -1
